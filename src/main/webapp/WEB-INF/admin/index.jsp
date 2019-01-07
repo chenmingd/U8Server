@@ -6,7 +6,7 @@
 %>
 <html>
 <head>
-  <title>U8Server后台管理系统|U8SDK</title>
+  <title>龙江峰宏SDK后台管理系统</title>
   <jsp:include page="/WEB-INF/layout/header.jsp"/>
 
   <script type="text/javascript">
