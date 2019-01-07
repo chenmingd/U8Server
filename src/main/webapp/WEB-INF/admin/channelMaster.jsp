@@ -1,29 +1,13 @@
-  <%--
-    Created by IntelliJ IDEA.
-    User: xiaohei
-    Date: 2015/8/22
-    Time: 14:01
-    To change this template use File | Settings | File Templates.
-  --%>
   <%@ page contentType="text/html;charset=UTF-8" language="java" %>
   <%
     String path = request.getContextPath();
     String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path;
 
   %>
-  <base href="<%=basePath%>">
   <html>
   <head>
     <title></title>
-
-    <link rel="stylesheet" type="text/css" href="<%=basePath%>/js/plugins/easyui/themes/default/easyui.css">
-    <link rel="stylesheet" type="text/css" href="<%=basePath%>/js/plugins/easyui/themes/icon.css">
-    <link rel="stylesheet" type="text/css" href="<%=basePath%>/js/plugins/easyui/themes/color.css">
-    <link rel="stylesheet" type="text/css" href="<%=basePath%>/css/u8server.css">
-
-    <script type="text/javascript" src="<%=basePath%>/js/plugins/easyui/jquery.min.js"></script>
-    <script type="text/javascript" src="<%=basePath%>/js/plugins/easyui/jquery.easyui.min.js"></script>
-    <script type="text/javascript" src="<%=basePath%>/js/plugins/easyui/locale/easyui-lang-zh_CN.js"></script>
+    <jsp:include page="/WEB-INF/layout/header.jsp"/>
 
   </head>
   <body>

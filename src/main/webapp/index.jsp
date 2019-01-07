@@ -9,6 +9,9 @@
 <html>
   <head>
     <title></title>
+    <script>
+        setTimeout("window.location='/admin/index'",2000);
+    </script>
   </head>
   <body>
     U8Server启动成功

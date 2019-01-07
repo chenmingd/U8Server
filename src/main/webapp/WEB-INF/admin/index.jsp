@@ -1,30 +1,13 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: xiaohei
-  Date: 2015/8/22
-  Time: 10:07
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%
-  String path = request.getContextPath();
-  String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path;
+    String path = request.getContextPath();
+    String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path;
 
 %>
-<base href="<%=basePath%>">
-
 <html>
 <head>
   <title>U8Server后台管理系统|U8SDK</title>
-
-  <link rel="stylesheet" type="text/css" href="<%=basePath%>/js/plugins/easyui/themes/default/easyui.css">
-  <link rel="stylesheet" type="text/css" href="<%=basePath%>/js/plugins/easyui/themes/icon.css">
-  <link rel="stylesheet" type="text/css" href="<%=basePath%>/js/plugins/easyui/themes/color.css">
-  <link rel="stylesheet" type="text/css" href="<%=basePath%>/css/u8server.css">
-
-  <script type="text/javascript" src="<%=basePath%>/js/plugins/easyui/jquery.min.js"></script>
-  <script type="text/javascript" src="<%=basePath%>/js/plugins/easyui/jquery.easyui.min.js"></script>
-  <script type="text/javascript" src="<%=basePath%>/js/plugins/easyui/locale/easyui-lang-zh_CN.js"></script>
+  <jsp:include page="/WEB-INF/layout/header.jsp"/>
 
   <script type="text/javascript">
 
@@ -104,7 +87,7 @@
     <div class="easyui-tabs" id="centerTab" fit="true" border="false">
       <div title="欢迎页" style="padding:20px;overflow:hidden;">
         <div style="margin-top:20px;">
-          <h3>你好，欢迎来到【U8Server后台管理系统】</h3>
+          <h3>你好，欢迎来到【龙江峰宏SDK后台管理系统】</h3>
         </div>
       </div>
     </div>
@@ -112,8 +95,8 @@
   <!-- 正下方panel -->
   <div region="south" style="height:50px;padding-top: 7px" align="center">
     <label>
-      U8SDK——让手游SDK接入更简单<br/>
-      官方网站：<a href = "http://www.u8sdk.com">http://www.u8sdk.com</a>
+      龙江峰宏SDK——让手游SDK接入更简单<br/>
+      官方网站：<a href = "http://www.52beishen.com">http://www.52beishen.com</a>
     </label>
   </div>
 </body>

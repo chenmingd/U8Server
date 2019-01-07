@@ -35,7 +35,7 @@
 
       </div>
       <div class="u8_title">
-        U8Server后台管理系统
+          龙江峰宏SDK后台管理系统
       </div>
       <div style="float:right;color: #ffffff;font-size: 12px;margin-top: 5px;margin-right: 10px;">
           <span>当前登录用户：</span><span>${sessionScope.adminName}</span>
