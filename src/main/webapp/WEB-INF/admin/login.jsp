@@ -11,7 +11,7 @@
   <jsp:include page="/WEB-INF/layout/header.jsp"/>
 
 </head>
-<body>
+<body style="background-color: #666;">
 <div style="height: 220px;display: block;">
 
 </div>
