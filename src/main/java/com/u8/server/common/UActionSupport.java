@@ -103,4 +103,29 @@ public class UActionSupport extends ActionSupport
     {
         this.scripts = scripts;
     }
+
+    protected boolean isWeixin(){
+		String userAgent = request.getHeader("user-agent").toLowerCase();;
+		if(userAgent.indexOf("micromessenger")!= -1){
+			return true;
+		}
+		return false;
+	}
+
+	protected boolean isIos(){
+		String userAgent = request.getHeader("user-agent").toLowerCase();;
+		if(userAgent.indexOf("iphone") != -1 || userAgent.indexOf("ipad") != -1 || userAgent.indexOf("ipod") != -1 || userAgent.indexOf("Mac") != -1 || userAgent.indexOf("mac") != -1 ){
+			return true;
+		}
+		return false;
+	}
+
+	protected void redirect(String url){
+		try {
+			this.response.sendRedirect(url);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+
 }

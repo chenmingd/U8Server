@@ -90,6 +90,11 @@
     </filter-mapping>
 
     <filter-mapping>
+        <filter-name>struts-prepare</filter-name>
+        <url-pattern>/pub/*</url-pattern>
+    </filter-mapping>
+
+    <filter-mapping>
         <filter-name>struts2Filter</filter-name>
         <url-pattern>/pay/*</url-pattern>
         <dispatcher>REQUEST</dispatcher>
